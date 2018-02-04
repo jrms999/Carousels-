@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Owl Carousel 2 Fluid Speed Demo</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css'>
+
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      .container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.item {
+  height: 20rem;
+}
+
+.owl-item:nth-of-type(6n+1) {
+  background-color: #6fc3df;
+}
+
+.owl-item:nth-of-type(6n+2) {
+  background-color: #8d82c4;
+}
+
+.owl-item:nth-of-type(6n+3) {
+  background-color: #ec8d81;
+}
+
+.owl-item:nth-of-type(6n+4) {
+  background-color: #e7b788;
+}
+
+.owl-item:nth-of-type(6n+5) {
+  background-color: #8ea9e8;
+}
+
+.owl-item:nth-of-type(6n+6) {
+  background-color: #87c5a4;
+}
+
+.owl-dots {
+  bottom: -40px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+.owl-dot {
+  background-color: #6fc3df;
+  border-radius: 50%;
+  height: 1rem;
+  margin: 0 5px;
+  opacity: .5;
+  transition: opacity .3s;
+  width: 1rem;
+}
+.owl-dot:hover, .owl-dot.active {
+  opacity: 1;
+}
+
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+  <main class="container">
+  <section class="owl-carousel js-carousel">
+    <div class="item" data-timing="2000"></div>
+    <div class="item" data-timing="2000"></div>
+    <div class="item" data-timing="5000"></div>
+    <div class="item" data-timing="8000"></div>
+    <div class="item"></div>
+  </section>
+</main>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

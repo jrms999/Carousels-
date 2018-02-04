@@ -1,0 +1,50 @@
+$_color-white: #fff;
+$_color-nero: #252525;
+$_color-viking: #6fc3df;
+$_color-blue-bell: #8d82c4;
+$_color-apricot: #ec8d81;
+$_color-gold-sand: #e7b788;
+$_color-portage: #8ea9e8;
+$_color-de-york: #87c5a4;
+$_color-lucky-point: #2a2f4a;
+$_color-biscay: #363a56;
+
+$colors: $_color-viking, $_color-blue-bell, $_color-apricot, $_color-gold-sand, $_color-portage, $_color-de-york;
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.item {
+  height: 20rem;  
+}
+
+ @for $i from 1 through length($colors) {
+    .owl-item:nth-of-type(#{length($colors)}n+#{$i}) {
+      background-color: nth($colors, $i);
+    }
+}
+
+.owl-dots {
+  bottom: -40px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+.owl-dot {
+  background-color: $_color-viking;
+  border-radius: 50%;
+  height: 1rem;
+  margin: 0 5px;
+  opacity: .5;
+  transition: opacity .3s;
+  width: 1rem;
+
+  &:hover,
+  &.active {
+    opacity: 1;
+  }
+}
