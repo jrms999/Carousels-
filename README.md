@@ -1,6 +1,9 @@
 # Carousels-
 
 
+http://kenwheeler.github.io/slick/
+
+
 
 https://github.com/KennethanCeyer/pg-gallery 
 
