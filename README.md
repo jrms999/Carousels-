@@ -17,3 +17,4 @@ https://www.w3schools.com/w3css/w3css_slideshow.asp
 
 
 
+http://flexslider.woothemes.com/basic-carousel.html
